@@ -1,0 +1,117 @@
+.footer{
+    background-color: $greyColor;
+    overflow-x:hidden;
+    padding-top: 30px;
+    
+    margin-top: 50px ;
+    .gallery , .info , .contact {
+        float:$float-left;
+    }
+    .gallery{
+        @media #{$minSmall} {
+
+            width: 100%;
+        }
+        @media #{$minMedium} {
+            width: 50%;
+        }
+       
+        .img-box{
+            overflow: hidden;
+            margin-bottom: 20px;
+            img{
+                @media #{$minSmall}{
+                    float:$float-left;
+                 }
+              
+              width: 150px;
+              height: 150px;
+              border: solid rgb(165, 165, 165);
+              
+            }
+            .text{
+                @media #{$minSmall}{
+                    float:$float-left;
+                    margin-right: 15px;
+                   margin-left: 15px;
+                   width: calc(100%-185px);
+                 }
+                
+                
+                h4{
+                    color: $mainColor;
+                    margin: 20px 0;
+                }
+                p{
+                    color: #888;
+                     line-height: 1.9;
+                     margin-top: 8px;
+                     margin: 10px;
+                }
+            }
+        }
+    }
+    .info{
+        @media #{$minSmall} {
+
+            width: 100%;
+        }
+        @media #{$minMedium} {
+            width: 25%;
+        }
+       
+        ul{
+            color:rgb(22, 22, 22) ;
+            line-height: 1.8;
+            li{
+                span{
+                    color:$mainColor ;
+                }
+            }
+        }
+    }
+    .contact{ 
+        @media #{$minSmall} {
+
+            width: 100%;
+        }
+        @media #{$minMedium} {
+            width: 25%;
+        }
+         input[type="text"],
+         input[type="email"],
+         textarea{
+             border:1px solid #888;
+             width: 100%;
+             margin-bottom: 5px;
+             padding: 10px;
+             border-radius: 10px;
+         }
+         textarea{
+             height: 140px;
+         }
+
+    }
+      
+   .section-titel{
+       color: rgb(44, 44, 44);
+       font-weight: normal;
+   }
+
+   .copyright{
+       padding: 52px 0;
+       border-top: 1px solid #8f8e8e;
+       overflow: hidden;
+       color: rgb(56, 56, 56);
+       margin-top: 30px;
+       .text{
+         float:$float-left;
+         width: 50%;
+       }
+       .author{
+        float:$float-left;
+        width: 50%;
+        text-align: $text-right;
+       }
+   }
+}

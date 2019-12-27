@@ -1,0 +1,161 @@
+@import 'sass/helpers/variables';
+
+
+$float-left:right;
+$float-right:left;
+
+$text-right:left;
+$text-left:right;
+
+
+.header{
+    .logo{
+          
+            float:$float-left;
+           
+            @media #{$maxMobile} {
+               
+                text-align: $text-left;
+            }
+            @media #{$minSmall} {
+                
+                text-align: $text-left;
+                
+            }
+            h1{
+              margin-bottom: 0;
+              margin-top: 10px;
+              
+            }
+       
+       .the-toggler{
+           right: auto;
+           left: 15px;
+       }
+      
+    }
+    .navbar{
+       
+        @media #{$minMedium} {
+            
+            float: $float-left;
+           
+        }
+       
+        
+     li{
+        
+        
+         float:$float-left ;
+         @media #{$maxMobile} {
+           
+            text-align: $float-left;
+ 
+         }
+     }
+     }
+    }
+
+/* start slider */
+
+
+/* end slider */
+
+/*start services*/
+.services{
+    .service-box{
+       
+        @media #{$minMedium} {
+            float: $float-left;
+          
+             
+        
+        }
+        
+         }
+      
+    }
+
+
+/*end services*/
+
+/*start  our players */
+.our-players{
+    .Players-box{
+        float: $float-left;
+       
+      
+       @media #{$maxSmall} {
+           float:$float-left;
+          
+       }
+       @media #{$minMedium} {
+       
+        text-align:$text-left;
+        
+    }
+   
+       
+    }
+}
+
+/*end  our players */
+
+/*start  our players */
+.lorem{
+    .lorem-box{
+        float: $float-left;
+       
+       }
+      
+    
+}
+
+/*end  our players */
+
+.footer{
+   
+    .gallery , .info , .contact {
+        float:$float-left;
+    }
+    
+       
+        .img-box{
+           
+            img{
+                @media #{$minSmall}{
+                    float:$float-left;
+                 }
+              
+             
+              
+            }
+            .text{
+                @media #{$minSmall}{
+                    float:$float-left;
+                   
+                 }
+                
+                
+              
+            }
+        }
+    }
+
+    
+    .contact{ 
+      
+    
+       .text{
+         float:$float-left;
+        
+       }
+       .author{
+        float:$float-left;
+       
+        text-align: $text-right;
+       }
+   
+}
+
+

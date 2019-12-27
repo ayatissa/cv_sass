@@ -1,0 +1,83 @@
+
+.header{
+    padding: 20px 0;
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+    .logo{
+        width: 30%;
+        float:$float-left;
+        position: relative;
+        @media #{$maxMobile} {
+            width: 100%;
+            float: none;
+            text-align: $text-left;
+        }
+        @media #{$minSmall} {
+            width: 30%;
+            float: none;
+            text-align: $text-left;
+            
+        }
+        h1{
+          margin-bottom: 0;
+          margin-top: 10px;
+          
+          
+        }
+      
+    }
+    .navbar{
+        overflow: hidden;
+        background-color: $mainColor;
+        border-radius: 15px;
+
+        @media #{$minSmall} {
+            width: 100%;
+            float: none;
+            margin-top: 30px;
+            display: block !important
+
+            
+        }
+        @media #{$minMedium} {
+            width: 70%;
+            float: $float-left;
+            margin-top: 1em;
+        }
+        @media #{$minSmall} {
+            width: 65%;
+        }
+        
+        @media #{$maxMobile} {
+            display: none;
+            border-radius: 0;
+
+        }
+     li{
+         width: 20%;
+         float:$float-left ;
+         font-size: 18px;
+         text-align: center;
+         @media #{$maxMobile} {
+           float: none;
+           display: block;
+           text-align: $float-left;
+
+        }
+       a{
+           display: block;
+           padding: 20px 10px;
+           color: #fff;
+           text-decoration: none;
+          
+       
+       &:hover{
+         color: #ddd;
+       }
+     }
+     }
+    }
+}
+
+
+

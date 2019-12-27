@@ -1,0 +1,34 @@
+.head-border{
+    position: relative;
+    @media #{$maxMobile}{
+        width: 300spx;
+    }
+    @media #{$minSmall}{
+        width: 300spx;
+    }
+
+   h2{
+    background-color: $mainColor;
+    text-align: center;
+    color: #fff;
+    margin: 40px auto;
+    border-radius: 15px;
+    width: 400px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    clear: both;
+    &:before {
+        content:'';
+        background-color:$greyColor;
+        width: 100%;
+        height: .5px;
+        z-index:-1;
+        position:absolute;
+        left: 0;
+        top: 50%
+        
+    }
+   }
+  
+}
+
